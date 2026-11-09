@@ -22,8 +22,6 @@ lab-project/
 ## Task 1: IntelliJ IDEA Ultimate
 IntelliJ IDEA Ultimate installed and activated with the JetBrains educational licence (valid through 04/11/2027).
 
-![Licence](screenshots/01_licence.png)
-![About](screenshots/02_about.png)
 
 ## Task 2: JDBC prime insertion
 1. Start MySQL in XAMPP, then run `sql/setup.sql` in phpMyAdmin.
@@ -41,17 +39,13 @@ ID | n | nth_prime
 2 | 3 | 5
 ```
 
-![Console](screenshots/03_console.png)
-![Table rows](screenshots/04_table_rows.png)
+
 
 ## Task 3: Apache Tomcat 10.1
 1. Downloaded the 64-bit Windows zip from https://tomcat.apache.org/download-10.cgi and extracted it.
 2. IntelliJ: *Run → Edit Configurations → + → Tomcat Server → Local*, set the Tomcat home folder.
 3. Deployment tab: add artifact `Servletdemo:war exploded`, application context `/Servletdemo`.
 4. Server tab: HTTP port `8080`. Started the server and checked the log for `Server startup in [...] milliseconds`.
-
-![Run configuration](screenshots/05_tomcat_config.png)
-![Server started](screenshots/06_tomcat_started.png)
 
 ## Task 4: Primality test servlet
 `PrimeServlet` is mapped to `/prime` with `@WebServlet`.
@@ -63,8 +57,7 @@ ID | n | nth_prime
 | 1 | `http://localhost:8080/Servletdemo/prime?number=1` | 1 is NOT a prime number |
 | abc | `http://localhost:8080/Servletdemo/prime?number=abc` | Please enter a valid integer |
 
-![Prime result](screenshots/07_prime.png)
-![Non-prime result](screenshots/08_not_prime.png)
+
 
 ## Final checklist
 - [x] IntelliJ IDEA Ultimate installed and activated
